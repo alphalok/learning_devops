@@ -25,10 +25,12 @@ pipeline {
 
         }
 
-        stage("build image") {
+        stage("build and push image") {
             steps{
                 script {
                     buildImage 'okooel/learning:jma-3.0'
+                    dockerLogin()
+                    dockerPush 'okooel/learning:jma-3.0'
                 }
             }
 
