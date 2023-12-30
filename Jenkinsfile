@@ -28,7 +28,7 @@ pipeline {
         stage("build image") {
             steps{
                 script {
-                    buildImage()
+                    buildImage 'okooel/learning:jma-3.0'
                 }
             }
 
