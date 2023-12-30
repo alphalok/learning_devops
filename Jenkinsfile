@@ -5,7 +5,7 @@
 library identifier: 'jenkins-shared-library@main', retriever: modernSCM(
         [$class : 'GitSCMSource',
         remote:'https://github.com/alphalok/jenkins-shared-library.git',
-        crendentialsId: 'github'
+        credentialsId: 'github'
         ]
 )
 def gv
