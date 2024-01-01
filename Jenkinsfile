@@ -16,7 +16,6 @@ pipeline {
         stage("build jar") {
             steps{
                 script {
-                    echo "testing the build trigers
                     gv.buildJar()
                 }
             }
