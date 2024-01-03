@@ -32,7 +32,6 @@ pipeline {
         stage("build jar") {
             steps{
                 script {
-                    echo " testing webHook"
                     gv.buildJar()
                 }
             }
